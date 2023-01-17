@@ -13,7 +13,23 @@
 		2D606450297714430013DC8F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2D60644E297714430013DC8F /* Main.storyboard */; };
 		2D606452297714440013DC8F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2D606451297714440013DC8F /* Assets.xcassets */; };
 		2D606455297714440013DC8F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2D606453297714440013DC8F /* LaunchScreen.storyboard */; };
+		2D606482297716CA0013DC8F /* MovieBoxAPI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2D606481297716CA0013DC8F /* MovieBoxAPI.framework */; };
+		2D606483297716CA0013DC8F /* MovieBoxAPI.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 2D606481297716CA0013DC8F /* MovieBoxAPI.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		2D606484297716CA0013DC8F /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				2D606483297716CA0013DC8F /* MovieBoxAPI.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		2D606445297714430013DC8F /* MovieBox.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MovieBox.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -24,6 +40,7 @@
 		2D606451297714440013DC8F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		2D606454297714440013DC8F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		2D606456297714440013DC8F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2D606481297716CA0013DC8F /* MovieBoxAPI.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = MovieBoxAPI.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,6 +48,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2D606482297716CA0013DC8F /* MovieBoxAPI.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -42,6 +60,7 @@
 			children = (
 				2D606447297714430013DC8F /* MovieBox */,
 				2D606446297714430013DC8F /* Products */,
+				2D606480297716CA0013DC8F /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -67,6 +86,14 @@
 			path = MovieBox;
 			sourceTree = "<group>";
 		};
+		2D606480297716CA0013DC8F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				2D606481297716CA0013DC8F /* MovieBoxAPI.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -77,6 +104,7 @@
 				2D606441297714430013DC8F /* Sources */,
 				2D606442297714430013DC8F /* Frameworks */,
 				2D606443297714430013DC8F /* Resources */,
+				2D606484297716CA0013DC8F /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -295,6 +323,7 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.6;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -323,6 +352,7 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.6;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
